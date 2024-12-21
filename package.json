@@ -1,0 +1,17 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npx lerna run build",
+    "build:watch": "npx lerna watch -- lerna run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "lerna": "^8.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
